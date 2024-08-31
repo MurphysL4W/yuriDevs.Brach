@@ -29,6 +29,21 @@
       justify-content: center;
       text-align: center;
     }
+
+    .email:hover {
+      box-shadow: 0px 0px 20px rgba(240, 10, 10, 0.515);
+      
+    }
+
+    .password:hover {
+      box-shadow: 0px 0px 20px rgba(10, 56, 240, 0.515);
+      
+    }
+
+    .login:hover {
+      box-shadow: 0px 0px 20px rgba(217, 10, 240, 0.515);
+      
+    }
   </style>
 </head>
     <body>
@@ -38,18 +53,20 @@
         ">Facebook</h2>
       <div class="form">
         <form>
-          <input type="email" required placeholder="Email" style="
+          <input class="email" type="email" required placeholder="Email" style="
             margin-bottom: 10px;
+            transition: 1s;
             "
           ><br>
          
          
-          <input type="password" required placeholder="password" style="
+          <input class="password" type="password" required placeholder="password" style="
           margin-bottom: 10px;
+          transition: 1s;
           "><br>
 
 
-          <input type="submit" value="Log In" style="
+          <input class="login" type="submit" value="Log In" style="
           width: 180px;
           background-color: rgb(83, 83, 237);
           color: white;
@@ -58,6 +75,7 @@
           padding-top: 5px;
           padding-bottom: 5px;
           margin-bottom: 10px;
+          transition: 1s;
           "
           
           ><br>
@@ -72,7 +90,7 @@
           margin-top: 10px;
           color: maroon;
           ">Bored?Play a game</a>
-          
+
         </form>
       </div>
     </div>
