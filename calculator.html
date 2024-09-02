@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <style>
+    div {
+      background-color: rgb(255, 255, 255);
+      margin-left: 350px;
+      margin-right: 350px;
+      padding-left:  20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      border-color: black;
+      border-width: 1px;
+      border-style: solid;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <input type="text" value="Check the console" style="width: 120px;">
+  <p>
+    <button onclick="
+      calculation += '1'; console.log(calculation)
+      ">1</button>
+    <button onclick="
+    calculation += '2'; console.log(calculation)
+    ">2</button>
+    <button onclick="
+    calculation += '3'; console.log(calculation)
+    ">3</button>
+  </p>
+  <p>
+    <button onclick="
+    calculation += '4'; console.log(calculation)
+    ">4</button>
+    <button onclick="
+    calculation += '5'; console.log(calculation)
+    ">5</button>
+    <button onclick="
+    calculation += '6'; console.log(calculation)
+    ">6</button>
+    </p>
+  <p>
+    <button onclick="
+    calculation += '7'; console.log(calculation)
+    ">7</button>
+    <button onclick="
+    calculation += '8'; console.log(calculation)
+    ">8</button>
+    <button onclick="
+    calculation += '9'; console.log(calculation)
+    ">9</button>
+  </p>
+  <button onclick="
+  calculation += '0'; console.log(calculation)
+  ">0</button>
+
+
+  <button onclick="
+  calculation += '+'; console.log(calculation)
+  ">+</button>
+
+  <button onclick="
+  calculation = eval(calculation); console.log(calculation)
+  ">=</button>
+  </div>
+  <script>
+    let calculation = '';
+
+  </script>
+</body>
+</html>
